@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Helvetica Regular";
+    src: url("https://db.onlinewebfonts.com/t/a64ff11d2c24584c767f6257e880dc65.eot");
+    src: url("https://db.onlinewebfonts.com/t/a64ff11d2c24584c767f6257e880dc65.eot?#iefix") format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/a64ff11d2c24584c767f6257e880dc65.woff2") format("woff2"),
+        url("https://db.onlinewebfonts.com/t/a64ff11d2c24584c767f6257e880dc65.woff") format("woff"),
+        url("https://db.onlinewebfonts.com/t/a64ff11d2c24584c767f6257e880dc65.ttf") format("truetype"),
+        url("https://db.onlinewebfonts.com/t/a64ff11d2c24584c767f6257e880dc65.svg#Helvetica Regular") format("svg");
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url('/fonts/tt-norms-pro-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url('/fonts/tt-norms-pro-semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('/fonts/cera-pro/Cera Pro Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('/fonts/cera-pro/Cera Pro Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('/fonts/cera-pro/Cera Pro Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('/fonts/cera-pro/Cera Pro Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('/fonts/cera-pro/Cera Pro Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('/fonts/cera-pro/Cera Pro Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@theme {
+    --font-helvetica: "Helvetica Regular", ui-sans-serif, system-ui, sans-serif;
+    --font-cera: 'Cera Pro', 'Helvetica Regular', ui-sans-serif, system-ui, sans-serif;
+}
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.{js,jsx,ts,tsx}';
+
+:root {
+    font-family: var(--font-cera);
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #f0f0f0;
+}
+
+* {
+    box-sizing: border-box;
+    font: inherit;
+}
+
+a,
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.gg-gradient {
+    background-color: #FFFFFF;
+    background-image:
+        repeating-linear-gradient(120deg, rgba(30,50,90,0.12) 0, rgba(30,50,90,0.12) 1px, transparent 1px, transparent 28px),
+        linear-gradient(38deg, #FFFFFF 4.32%, #E5EAF5 33.18%, #788DB5 37.86%, #3D4F79 58.14%, #1E325A 58.86%, #162447 79.64%, #0F1A33 80%, #0F1A33 100%);
+    background-size: 28px 28px, auto;
+    background-blend-mode: normal, normal;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .marquee-track,
+    .backers-track {
+        animation-play-state: paused !important;
+    }
+}
