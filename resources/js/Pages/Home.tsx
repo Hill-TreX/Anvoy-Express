@@ -5,6 +5,7 @@ import { motion } from 'motion/react';
 import type { IconSvgElement } from '@hugeicons/react';
 import StatsRow from '@/Components/rivr/StatsRow';
 import FeaturesSection from '@/Components/rivr/FeaturesSection';
+import FeatureCarousel from '@/components/ui/feature-carousel';
 import CTABanner from '@/Components/rivr/CTABanner';
 import Footer from '@/Components/rivr/Footer';
 import CookiePanel from '@/Components/rivr/CookieBanner';
@@ -109,6 +110,16 @@ export default function Home() {
             <Hero />
             <StatsRow />
             <FeaturesSection />
+                <div>
+                    <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="text-2xl font-normal tracking-tight text-[rgba(30,50,90,0.95)] md:text-3xl lg:text-4xl text-center mb-4">Cargo Shipping</motion.h2>
+                    <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1 }} className="mx-auto mb-3 flex w-fit items-center gap-2 rounded-full border border-[rgba(30,50,90,0.1)] bg-white/60 px-4 py-2 backdrop-blur-md">
+                        <span className="text-[14px] font-normal text-[rgba(30,50,90,0.9)] uppercase tracking-wider">Business Only</span>
+                    </motion.div>
+                    <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2 }} className="mt-2 text-center max-w-lg mx-auto text-sm font-normal text-[rgba(30,50,90,0.6)] md:text-base">Discover shipping and logistics service options from Anvoy Global Forwarding.</motion.p>
+                </div>
+                <div className="mt-10">
+                    <FeatureCarousel />
+                </div>
             <CTABanner />
             <Footer />
             <CookiePanel />
