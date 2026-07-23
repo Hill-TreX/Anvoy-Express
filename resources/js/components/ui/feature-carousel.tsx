@@ -88,11 +88,11 @@ export function FeatureCarousel() {
 
   return (
     <div className="w-full max-w-[1536px] mx-auto p-4 md:p-10">
-      <div className="relative overflow-hidden rounded-[2.5rem] lg:rounded-[3.5rem] flex flex-col lg:flex-row min-h-[500px] lg:h-[550px] border border-[#1E325A]/10 bg-white shadow-xl">
+      <div className="relative overflow-hidden rounded-[2.5rem] lg:rounded-[3.5rem] flex flex-col lg:flex-row min-h-[450px] lg:h-[550px] border border-[#1E325A]/10 bg-white shadow-xl">
         {/* Left Side: Navigation Chips */}
-        <div className="w-full lg:w-[35%] min-h-[350px] md:min-h-[400px] lg:h-full relative z-30 flex flex-col items-start justify-center overflow-hidden px-8 md:px-16 lg:pl-20 bg-[#1E325A] ">
-          <div className="absolute inset-x-0 top-0 h-16 md:h-24 lg:h-20 bg-gradient-to-b from-[#1E325A] via-[#1E325A]/90 to-transparent z-40" />
-          <div className="absolute inset-x-0 bottom-0 h-16 md:h-24 lg:h-20 bg-gradient-to-t from-[#1E325A] via-[#1E325A]/90 to-transparent z-40" />
+        <div className="w-full lg:w-[35%] min-h-[300px] md:min-h-[350px] lg:h-full relative z-30 flex flex-col items-start justify-center overflow-hidden px-8 md:px-16 lg:pl-20 bg-[#1E325A] ">
+          <div className="absolute inset-x-0 top-0 h-12 md:h-16 lg:h-20 bg-gradient-to-b from-[#1E325A] via-[#1E325A]/90 to-transparent z-40" />
+          <div className="absolute inset-x-0 bottom-0 h-12 md:h-16 lg:h-20 bg-gradient-to-t from-[#1E325A] via-[#1E325A]/90 to-transparent z-40" />
           
           <div className="relative w-full h-full flex items-center justify-center lg:justify-start z-20">
             {FEATURES.map((feature, index) => {
@@ -108,11 +108,11 @@ export function FeatureCarousel() {
                 <motion.div
                   key={feature.id}
                   style={{
-                    height: ITEM_HEIGHT,
+                    height: 55, // Reduced from ITEM_HEIGHT (65) for mobile density
                     width: "fit-content",
                   }}
                   animate={{
-                    y: wrappedDistance * ITEM_HEIGHT,
+                    y: wrappedDistance * 55,
                     opacity: 1 - Math.abs(wrappedDistance) * 0.35,
                     scale: isActive ? 1.05 : 0.95,
                   }}
@@ -128,9 +128,9 @@ export function FeatureCarousel() {
                     onMouseEnter={() => setIsPaused(true)}
                     onMouseLeave={() => setIsPaused(false)}
                     className={cn(
-                      "relative flex items-center gap-4 px-6 md:px-10 lg:px-8 py-3.5 md:py-4 lg:py-3 rounded-full transition-all duration-500 text-left group border",
+                      "relative flex items-center gap-3 px-5 md:px-8 lg:px-8 py-2.5 md:py-3.5 lg:py-3 rounded-full transition-all duration-500 text-left group border",
                       isActive
-                        ? "bg-white text-[#1E325A] border-white z-10 shadow-lg"
+                        ? "bg-white text-[#1E325A] border-white z-10 shadow-md"
                         : "bg-transparent text-white/40 border-white/10 hover:border-white/30 hover:text-white"
                     )}
                   >
@@ -142,12 +142,12 @@ export function FeatureCarousel() {
                     >
                       <HugeiconsIcon
                         icon={feature.icon}
-                        size={18}
+                        size={16}
                         strokeWidth={2}
                       />
                     </div>
 
-                    <span className="font-medium text-sm md:text-base tracking-tight whitespace-nowrap uppercase">
+                    <span className="font-medium text-[12px] md:text-sm tracking-tight whitespace-nowrap uppercase">
                       {feature.label}
                     </span>
                   </button>
@@ -158,8 +158,8 @@ export function FeatureCarousel() {
         </div>
 
         {/* Right Side: Feature Display */}
-        <div className="flex-1 min-h-[400px] md:min-h-[500px] lg:h-full relative bg-gray-50/50 flex items-center justify-center py-12 md:py-16 lg:py-12 px-6 md:px-12 lg:px-20 overflow-hidden border-t lg:border-t-0 lg:border-l border-gray-200">
-          <div className="relative w-full max-w-[400px] aspect-[4/5] flex items-center justify-center">
+        <div className="flex-1 min-h-[350px] md:min-h-[450px] lg:h-full relative bg-gray-50/50 flex items-center justify-center py-8 md:py-12 lg:py-12 px-4 md:px-12 lg:px-20 overflow-hidden border-t lg:border-t-0 lg:border-l border-gray-200">
+          <div className="relative w-full max-w-[300px] md:max-w-[380px] lg:max-w-[400px] aspect-[4/5] flex items-center justify-center">
             {FEATURES.map((feature, index) => {
               const status = getCardStatus(index);
               const isActive = status === "active";
