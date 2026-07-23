@@ -3,7 +3,7 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "vite build",
+        "build": "vite build && cp -R public/fonts public/build/fonts",
         "dev": "vite"
     },
     "devDependencies": {

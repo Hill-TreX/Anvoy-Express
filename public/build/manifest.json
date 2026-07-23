@@ -1,13 +1,13 @@
 {
-  "_Footer-Baov2tSP.js": {
-    "file": "assets/Footer-Baov2tSP.js",
+  "_Footer-CAYFYaoG.js": {
+    "file": "assets/Footer-CAYFYaoG.js",
     "name": "Footer",
     "imports": [
       "resources/js/app.tsx"
     ]
   },
   "resources/css/app.css": {
-    "file": "assets/app-n-oeakcO.css",
+    "file": "assets/app-CaujjvuN.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "name": "app",
@@ -16,27 +16,27 @@
     ]
   },
   "resources/js/Pages/Home.tsx": {
-    "file": "assets/Home-o3kEQ58Q.js",
+    "file": "assets/Home-BQOSEZhj.js",
     "name": "Home",
     "src": "resources/js/Pages/Home.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_Footer-Baov2tSP.js"
+      "_Footer-CAYFYaoG.js"
     ]
   },
   "resources/js/Pages/NotFound.tsx": {
-    "file": "assets/NotFound-C376i-bg.js",
+    "file": "assets/NotFound-BvOyvgKf.js",
     "name": "NotFound",
     "src": "resources/js/Pages/NotFound.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_Footer-Baov2tSP.js"
+      "_Footer-CAYFYaoG.js"
     ]
   },
   "resources/js/app.tsx": {
-    "file": "assets/app-DrdHTzZa.js",
+    "file": "assets/app-CkKnQcO-.js",
     "name": "app",
     "src": "resources/js/app.tsx",
     "isEntry": true,

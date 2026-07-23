@@ -21,13 +21,18 @@ export function NotFound() {
 			>
 				<Empty className="border-none bg-white/50 backdrop-blur-xl shadow-2xl rounded-[3rem] p-8 sm:p-12">
 					<EmptyHeader>
-						<motion.h1 
-							initial={{ opacity: 0, y: 20 }}
-							animate={{ opacity: 1, y: 0 }}
-							className="font-medium text-[12rem] leading-none tracking-tighter text-[#1E325A]"
+						<h1 
+							style={{ 
+								fontSize: 'clamp(8rem, 20vw, 15rem)', 
+								fontWeight: 900, 
+								lineHeight: 1, 
+								letterSpacing: '-0.05em', 
+								color: '#1E325A',
+								margin: 0
+							}}
 						>
 							404
-						</motion.h1>
+						</h1>
 						<EmptyDescription className="text-nowrap text-[#1E325A]/60 text-lg">
 							The page you're looking for might have been <br />
 							moved or doesn't exist.

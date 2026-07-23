@@ -1,4 +1,4 @@
-import { NotFound } from "@/components/ui/not-found-2";
+import { NotFound } from "@/components/ui/not-found";
 import { Head } from "@inertiajs/react";
 import Footer from '@/Components/rivr/Footer';
 

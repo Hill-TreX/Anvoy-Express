@@ -10,7 +10,7 @@ import CTABanner from '@/Components/rivr/CTABanner';
 import Footer from '@/Components/rivr/Footer';
 import CookiePanel from '@/Components/rivr/CookieBanner';
 
-const videoUrl = '/videos/ezgif-1c1539a3c6283770.webm';
+const videoUrl = '/videos/anvoy-hero.webm';
 
 function Navbar() {
     const links = [
