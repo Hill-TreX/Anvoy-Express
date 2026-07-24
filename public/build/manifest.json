@@ -1,13 +1,21 @@
 {
-  "_Footer-CAYFYaoG.js": {
-    "file": "assets/Footer-CAYFYaoG.js",
+  "_Footer-CtEQtfMp.js": {
+    "file": "assets/Footer-CtEQtfMp.js",
     "name": "Footer",
+    "imports": [
+      "resources/js/app.tsx",
+      "_react-MOGVxX-m.js"
+    ]
+  },
+  "_react-MOGVxX-m.js": {
+    "file": "assets/react-MOGVxX-m.js",
+    "name": "react",
     "imports": [
       "resources/js/app.tsx"
     ]
   },
   "resources/css/app.css": {
-    "file": "assets/app-CaujjvuN.css",
+    "file": "assets/app-DtRvlkoa.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "name": "app",
@@ -16,32 +24,45 @@
     ]
   },
   "resources/js/Pages/Home.tsx": {
-    "file": "assets/Home-BQOSEZhj.js",
+    "file": "assets/Home-CkcfzZky.js",
     "name": "Home",
     "src": "resources/js/Pages/Home.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_Footer-CAYFYaoG.js"
+      "_Footer-CtEQtfMp.js",
+      "_react-MOGVxX-m.js"
+    ]
+  },
+  "resources/js/Pages/Login.tsx": {
+    "file": "assets/Login-B3b7tEVQ.js",
+    "name": "Login",
+    "src": "resources/js/Pages/Login.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.tsx",
+      "_react-MOGVxX-m.js"
     ]
   },
   "resources/js/Pages/NotFound.tsx": {
-    "file": "assets/NotFound-BvOyvgKf.js",
+    "file": "assets/NotFound-DJ4yFvZE.js",
     "name": "NotFound",
     "src": "resources/js/Pages/NotFound.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_Footer-CAYFYaoG.js"
+      "_Footer-CtEQtfMp.js",
+      "_react-MOGVxX-m.js"
     ]
   },
   "resources/js/app.tsx": {
-    "file": "assets/app-CkKnQcO-.js",
+    "file": "assets/app-DpC-fnB7.js",
     "name": "app",
     "src": "resources/js/app.tsx",
     "isEntry": true,
     "dynamicImports": [
       "resources/js/Pages/Home.tsx",
+      "resources/js/Pages/Login.tsx",
       "resources/js/Pages/NotFound.tsx"
     ]
   }
